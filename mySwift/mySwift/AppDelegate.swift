@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  mySwift
 //
-//  Created by 宋秀腾 on 2018/6/17.
-//  Copyright © 2018年 Mr s. All rights reserved.
+//  Created by 醉酒当歌 on 2018/5/23.
+//  Copyright © 2018年 SXT. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let rootController = MainController()
+        self.window?.rootViewController = rootController
+        self.window?.backgroundColor = UIColor.white
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
